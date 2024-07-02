@@ -18,7 +18,7 @@ func dirTree(out io.Writer, path string, includeFiles bool) error {
 
 func dirTreeHelper(out io.Writer, path string, info os.FileInfo, includeFiles bool, prefix string) error {
 	if !info.IsDir() {
-		return fmt.Errorf("%s is not a directory", path)
+		return fmt.Errorf("%s is`t a directory", path)
 	}
 
 	entries, err := os.ReadDir(path)
