@@ -24,7 +24,7 @@ func main() {
 	initGame()
 
 	reader := bufio.NewReader(os.Stdin)
-	fmt.Println("Добро пожаловать в игру! Введите команду:")
+	fmt.Println("Добро пожаловать в игру! это самый первый вариант игры(тестовый) Введите команду:")
 
 	for {
 		fmt.Print("> ")
